@@ -27,7 +27,8 @@
     "release:check": "lerna changed",
     "release:latest": "lerna publish --yes --conventional-commits --create-release github --message 'chore(release): publish [ci skip]'",
     "release:canary": "lerna publish --canary --ignore-scripts",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "vercel-build": "echo hello"
   },
   "workspaces": [
     "packages/*"
