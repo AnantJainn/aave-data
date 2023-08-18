@@ -83,10 +83,10 @@ app.use((req, res, next) => {
 });
 
 // Routes
-app.use("/", Aave);
+app.use("https://aave-data-sigma.vercel.app/", Aave);
 
 // Default route
-app.get('/', (req, res) => {
+app.get('https://aave-data-sigma.vercel.app/', (req, res) => {
     res.send('Anant Gauranshi deployed it 🥳');
 });
 
