@@ -7,7 +7,7 @@ const dotenv = require('dotenv');
 // const Aave = require("./api/routes/aave.js");
 const Aave = require("./api/routes/aave")
 dotenv.config();
-const router = express.Router();
+// const router = express.Router();
 const app = express();
 
 // Middleware
@@ -54,7 +54,7 @@ app.use((error, req, res, next) => {
     });
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 9001;
 
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`);
