@@ -7,7 +7,7 @@ const dotenv = require('dotenv');
 // const Aave = require("./api/routes/aave.js");
 const Aave = require("./api/routes/aave")
 dotenv.config();
-
+const router = express.Router();
 const app = express();
 
 // Middleware
@@ -30,7 +30,7 @@ app.use((req, res, next) => {
 });
 
 // Routes
-app.use("/aave", Aave);
+app.use("/", Aave);
 
 // Default route
 app.get('/', (req, res) => {
