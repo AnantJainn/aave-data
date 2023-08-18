@@ -30,7 +30,7 @@ app.use((req, res, next) => {
 });
 
 // Routes
-app.use("/", Aave);
+app.use("/aave", Aave);
 
 // Default route
 app.get('/', (req, res) => {
