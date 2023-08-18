@@ -1,21 +1,9 @@
 
 const express = require('express');
-const morgan = require('morgan');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const dotenv = require('dotenv');
 // const Aave = require("./api/routes/aave.js");
 const Aave = require("./api/aave")
-dotenv.config();
 // const router = express.Router();
 const app = express();
-
-// Middleware
-app.use(cors());
-app.use(morgan('dev'));
-app.use('/uploads', express.static('uploads'));
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
 
 // CORS Headers
 app.use((req, res, next) => {
