@@ -9,7 +9,7 @@
 
 const express = require("express");
 const router = express.Router();
-const AaveControllers = require("../controllers/aave.js");
+const AaveControllers = require("./aavec.js");
 
 router.get("/", (req, res) => {
     res.send("Anant Gauranshi deployed it 🥳");

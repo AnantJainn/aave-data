@@ -6,11 +6,12 @@
   },
   "private": true,
   "license": "MIT",
-  "main": "app.js",
+  "main": "index.js",
   "engines": {
-    "node": "18.x"
+    "node": "14.x"
   },
   "scripts": {
+    "start": "node index.js",
     "postinstall": "lerna bootstrap",
     "clean": "rimraf coverage && lerna run clean",
     "lint": "lerna run lint",
