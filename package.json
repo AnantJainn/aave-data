@@ -6,6 +6,10 @@
   },
   "private": true,
   "license": "MIT",
+  "main": "app.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "postinstall": "lerna bootstrap",
     "clean": "rimraf coverage && lerna run clean",
